@@ -1,0 +1,2 @@
+Hi there,
+This is a piece of text to demonstrate XProc 3.0 with.
