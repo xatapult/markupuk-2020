@@ -9,7 +9,9 @@ This repository contains (or will soon contain) the presentations and example co
 **Presenter:**
 
 [Erik Siegel](https://www.linkedin.com/in/esiegel/)
+
 [Xatapult](http://www.xatapult.com)
+
 [erik@xatapult.nl](mailto:erik@xatapult.nl)
 
 
@@ -59,6 +61,16 @@ This is a piece of text to demonstrate XProc 3.0 with.</text>
 
 ## Important links
 
+* GIT repository for this webinar:  [https://github.com/xatapult/markupuk-2020](https://github.com/xatapult/markupuk-2020)
+
 * Morgana XProc 3.0 processor: [https://www.xml-project.com/](https://www.xml-project.com/)
+
+* Calabash XProc processor: [https://xmlcalabash.com/](https://xmlcalabash.com/)
+
 * XProc specification: [https://spec.xproc.org/](https://spec.xproc.org/)
-* 
+  * Main specification (last draft): [https://spec.xproc.org/master/head/xproc/](https://spec.xproc.org/master/head/xproc/)
+  * Standard step library (last draft): [https://spec.xproc.org/master/head/steps/](https://spec.xproc.org/master/head/steps/)
+
+* Introductory articles: [https://www.xml.com](https://www.xml.com/articles/?tag=xproc)
+
+* Book: [https://xmlpress.net/publications/xproc-3-0/](https://xmlpress.net/publications/xproc-3-0/)
