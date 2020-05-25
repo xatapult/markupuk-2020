@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documents>
+  
+  <doc filename="output1.xml" enabled="true">
+    <contents>This is document number 1</contents>
+  </doc>
+  
+  <doc filename="output2.xml">
+    <contents>This is document number 2</contents>
+    <more>It has some more...</more>
+  </doc>
+  
+</documents>
+
