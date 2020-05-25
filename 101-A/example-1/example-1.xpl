@@ -5,6 +5,6 @@
   <p:output port="result"/>
 
   <p:wrap-sequence wrapper="text"/>
-  <p:add-attribute attribute-name="timestamp" attribute-value="{current-dateTime()}"/>
+  <p:add-attribute match="/*" attribute-name="timestamp" attribute-value="{current-dateTime()}"/>
 
 </p:declare-step>
