@@ -26,11 +26,13 @@ This repository contains (or will soon contain) the presentations and example co
 
 **XProc processor:**
 
+* *Make sure* you have Java 8 installed and up and running. Morgana doesn't support higher versions (yet)
 * Download the Morgana XProc 3.0 processor at [https://www.xml-project.com/](https://www.xml-project.com/) 
 * Unzip the zip
 * Add the main Morgana directory to your system's `path`
 * Add a Saxon jar file to the `MorganaXProc-IIIse_lib` sub-directory. For instance for Saxon 9: `saxon9he.jar`. The free home edition (HE) is sufficient.
 * Try it: Typing `morgana` on the command line should now give you some output about it's usage
+
 
 -----
 
