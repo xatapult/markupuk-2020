@@ -2,9 +2,22 @@
 <project version="22.0">
     <meta>
         <filters directoryPatterns="" filePatterns="\Qmarkupuk-202006.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
-        <options/>
+        <options>
+            <serialized version="22.0" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>editor.font</String>
+                        <String>Monospaced,0,40</String>
+                    </entry>
+                    <entry>
+                        <String>key.fonts.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
     </meta>
-    <projectTree name="markupuk-202006.xpr">
+    <projectTree name="markupuk-2020.xpr">
         <folder path="../"/>
     </projectTree>
 </project>
