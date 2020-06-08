@@ -8,9 +8,9 @@
 
   <p:viewport match="/*/doc">
     <p:if test="/*/@enabled">
-      <p:store href="{$output-directory}/{/*/@filename}" name="store-the-document"/>
+      <p:store href="{$output-directory}/{/*/@filename}" />
       <p:identity>
-        <p:with-input pipe="result-uri@store-the-document"/>
+        <p:with-input pipe="result-uri"/>
       </p:identity>
     </p:if>
   </p:viewport>
