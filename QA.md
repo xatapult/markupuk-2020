@@ -52,3 +52,31 @@ Another usage for the `href` attribute is to set the context item to a document 
 <p:variable name="sound" select="/*/@quack" href="duck.xml"/>
 
 ```
+
+----
+**In some examples there is not much difference between an input port, an option, and a variable whose value is derived from a file. Is there a best practice for when to use which feature?**
+
+I'm afraid not (yet). What I've tried to show you in the examples are  several ways of doing things, and yes, sometimes you pick and choose. The idea was to show you *what* was possible, not when it was most useful. Usefulness of course depends on functionality and requirements, so it's up to you to experiment, try, stumble, fail and conquer!  
+
+----
+**Is there any tool support for constructing XProc scripts (aside from tools to run the scripts)?**
+
+Beside generic XML editors, no, not yet.
+
+----
+**How to trick oXygen in validating XProc 3.0 pipelines**
+
+That's not for the faint of heart, but here's the recipe (I'm going to assume your know your way around oXygen enough, otherwise this explanation would become way too long):
+
+* Make sure you have the RelaxNG schema for XProc 3.0 available, see "Is there a schema for XProc?" above.
+* In oXygen, in the global options, create a new "Document Type Association" for XProc 3.0.
+* On the first tab, associate it with:
+  * Elements: `declare-step` and `library`
+  * In namespace  `http://www.w3.org/ns/xproc`
+  * With attribute `version="3.0"`
+* Add a default *validation scenario* that validates against the XProc 3.0 RelaxNG schema. Watch out: Adding the schema to the  *Schema* tab doesn't seem to do the trick, I have no idea why. The only way I could get it working was by adding a default validation scneario to the association.
+* Make sure your XProc 3.0 association is enabled and high enough in the ranks of associations.
+
+This makes oXygen validate your XProc 3.0 pipelines. Unfortunately however, it seems to have XProc 1.0 support hardwired, which means that all the "help" it will give you (suggesting element/attribute names, values, etc.) comes from an XProc 1.0 schema and *not*  from the XProc 3.0 schema. So simply ignore all the hints and type in what you need. 
+
+
