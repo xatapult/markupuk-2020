@@ -35,14 +35,15 @@
 
   <!-- Just for now - to show the document changes: -->
   <p:for-each>
-    <p:if test="not(ends-with(p:document-property(., 'base-uri'), '/demo.html'))">
+    <p:if test="p:document-property(., 'content-type') ne 'text/html'">
       <p:identity>
-        <p:with-input port="source">
-          <other-document/>
+        <p:with-input>
+          <other-document content-type="{p:document-property(., 'content-type')}"/>
         </p:with-input>
       </p:identity>
     </p:if>
   </p:for-each>
+  
   <p:wrap-sequence wrapper="zip-demo"/>
 
 </p:declare-step>

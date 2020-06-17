@@ -22,12 +22,13 @@
   <!-- Just for now - to show the base-uri values: -->
   <p:for-each>
     <p:identity>
-      <p:with-input port="source">
+      <p:with-input>
         <doc base-uri="{p:document-property(., 'base-uri')}" 
           content-type="{p:document-property(., 'content-type')}"/>
       </p:with-input>
     </p:identity>
   </p:for-each>
+  
   <p:wrap-sequence wrapper="zip-demo"/>
 
 </p:declare-step>

@@ -3,7 +3,9 @@
 
   <p:input port="source" href="input.zip"/>
   <p:output port="result" serialization="map{ 'indent': true() }" sequence="true"/>
-
+  
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  
   <!-- Get the existing manifest: -->
   <p:archive-manifest/>
 
@@ -13,7 +15,9 @@
       <c:entry href="{ resolve-uri('kanava.jpg', static-base-uri()) }" name="img/kanava.jpg"/>
     </p:with-input>
   </p:insert>
-
+  
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  
   <!-- Extract the zip file: -->
   <p:unarchive>
     <p:with-input pipe="source@add-new-logo"/>
